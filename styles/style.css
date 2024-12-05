@@ -1,4 +1,3 @@
-
 :root {
   --main-font: "IBM Plex mono";
   --paragraph-font-color: #f1b2ce;
@@ -135,7 +134,7 @@ button:disabled {
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid #FF007066;
+  border: 1px solid #ff007066;
 }
 
 .header__theme-menu-button_type_dark:focus {
@@ -466,7 +465,5 @@ button:disabled {
 
   .footer {
     block-size: 668px;
-    
   }
-
 }
