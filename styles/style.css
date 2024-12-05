@@ -428,12 +428,6 @@ button:disabled {
     justify-content: center;
   }
 
-  /* .header__theme-menu-button:nth-last-child() {
-    background-color: transparent;
-    border: solid transparent;
-    padding: 3px 13px;
-  } */
-
   .main {
     padding-inline: 10px;
   }
