@@ -2,6 +2,6 @@
 
 ## Как запустить проект:
 
-##### Клонировать репозиротий https://github.com/username/slozhno-sosredotochitsya-fd
+##### Клонировать репозиротий https://github.com/MariaSharipova/slozhno-sosredotochitsya-fd
 
 ##### Открыть файл index.html в любом браузере. Наслаждаться. 
