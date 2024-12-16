@@ -10,6 +10,7 @@
   --section-heading-color: #ff0070;
   --paragraph-font-color: #f1b2ce;
   --menu-button-hover: #ff007066;
+  --rec-display: inline-block;
 }
 
 .page {
@@ -84,6 +85,30 @@ button:disabled {
   top: 20px;
 }
 
+.dark_theme_decorative_element::before {
+  display: var(--rec-display);
+  content: "REC";
+  color: var(--accent-color);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
+
+.dark_theme_decorative_element::after {
+  
+  content: "";
+  display: var(--rec-display);
+  inline-size: 10px;
+  block-size: 10px;
+  margin-inline-start: 10px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
+}
+
+
 .decorated-zone::before {
   content: "";
   position: absolute;
@@ -102,7 +127,7 @@ button:disabled {
   inline-size: 25px;
   border-bottom: 1px solid var(--header-theme-color);
   border-left: 1px solid var(--header-theme-color);
-  top: 720px;
+  bottom: 20px;
   left: 20px;
 }
 
@@ -186,7 +211,7 @@ button:disabled {
 }
 
 .low__concentration__section .section__heading {
-  grid-column: span 2;
+  max-inline-size: 315px;
 }
 
 .low__concentration__section .list {
@@ -289,7 +314,7 @@ button:disabled {
   border: var(--paragraph-font-color) solid 1px;
 }
 
-@media (width <= 768px) {
+@media (width <= 1023px) {
   .header {
     min-block-size: 1024px;
   }
@@ -311,8 +336,7 @@ button:disabled {
   }
 
   .decorated-zone::after {
-    content: "";
-    top: 978px;
+    bottom: 20px;
   }
 
   .reasons__section {
@@ -320,7 +344,7 @@ button:disabled {
   }
 
   .low__concentration__section .section__heading {
-    grid-column: span 1
+    max-inline-size: 236px;
   }
 
   .low__concentration__section {
@@ -345,7 +369,7 @@ button:disabled {
   }
 }
 
-@media (width <= 500px) {
+@media (width <= 767px) {
   .main {
     padding-inline: 10px;
   }
@@ -380,8 +404,8 @@ button:disabled {
   }
 
   .decorated-zone::after {
-    top: 633px;
     left: 10px;
+    bottom: 10px;
   }
 
   .header__theme-menu {
@@ -400,6 +424,10 @@ button:disabled {
     flex-direction: column;
     row-gap: 20px;
     margin-block-end: 50px;
+  }
+
+  .low__concentration__section .section__heading {
+    max-inline-size: 355px;
   }
 
   .adviсes__section {

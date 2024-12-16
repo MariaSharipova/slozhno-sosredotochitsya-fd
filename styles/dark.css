@@ -10,25 +10,5 @@
   --section-heading-color: #ff0070;
   --paragraph-font-color: #F1B2CE;
   --menu-button-hover: #FF007066;
-}
-
-.theme_dark .dark_theme_decorative_element::before {
-  content: "REC";
-  color: var(--accent-color);
-  font-family: IBM Plex Mono;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25px;
-  text-align: center;
-}
-
-.theme_dark .dark_theme_decorative_element::after {
-  content: "";
-  display: inline-block;
-  inline-size: 10px;
-  block-size: 10px;
-  margin-inline-start: 10px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  filter: drop-shadow(0px 0px 4px var(--accent-color));
+  --rec-display: inline-block;
 }
