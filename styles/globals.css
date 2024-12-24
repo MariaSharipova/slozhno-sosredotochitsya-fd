@@ -41,7 +41,3 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
-
-p:not(:last-child) {
-  margin-block-end: 0.5rem;
-}
